@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require('cors');
 const app = express();
 
-app.use(cors());
 const dogs = [
   {
     id: 1,
@@ -79,6 +78,8 @@ const dogs = [
       "https://images.unsplash.com/photo-1543071220-6ee5bf71a54e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Ym94ZXIlMjBkb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
   },
 ];
+
+app.use(cors());
 
 app.get("/v1/dogs", (req, res) => {
   res.status(200).json(dogs);

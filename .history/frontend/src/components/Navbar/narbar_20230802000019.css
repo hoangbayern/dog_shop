@@ -1,0 +1,6 @@
+.navbar {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    padding-right: 5px;
+}

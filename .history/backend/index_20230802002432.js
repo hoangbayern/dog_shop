@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require('cors');
 const app = express();
 
-app.use(cors());
 const dogs = [
   {
     id: 1,
@@ -87,3 +86,5 @@ app.get("/v1/dogs", (req, res) => {
 app.listen("8080", () => {
   console.log("Server is running....");
 });
+
+app.use(cors());

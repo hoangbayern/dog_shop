@@ -1,0 +1,13 @@
+.navbar {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+}
+.navbar > * {
+    padding-right: 10px;
+    text-decoration: none;
+    color: #9c6644;
+}
+.navbar > *:hover {
+    color: #e76f51;
+}
